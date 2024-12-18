@@ -3,15 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vanvisa Boonkawe's Profile</title>
+    <style>
+        body {
+            width: 100%; /* ขยายเต็มหน้าจอกว้าง */
+            height: 500px;
+            background-image: url('img/1.jpg'); /* กำหนดภาพพื้นหลัง */
+            background-size: cover; /* ใช้คำสั่ง cover เพื่อให้พื้นหลังขยายเต็มหน้าจอ */
+            background-position: center center;  /* ตั้งภาพให้อยู่ตรงกลาง */
+            background-repeat: no-repeat;  /* ป้องกันการซ้ำของภาพ */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f1ff; /* พื้นหลังโทนสีฟ้าอ่อน */
+            line-height: 1.6;
+        }
+
+        /* กล่องโปรไฟล์หลัก */
+        .container {
+            width: 80%;
+            margin: 30px auto; /* ลดระยะห่างระหว่างกล่อง */
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 15px; /* ทำให้มุมกล่องโค้งมน */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กล่อง */
+        }
+
+        /* หัวข้อโปรไฟล์ */
+        h1 {
+            text-align: center;
+            color: #003366; /* สีน้ำเงินเข้ม */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #003366;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        h3 {
+            color: #444;
+            font-size: 20px;
+            margin: 5px 0;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        /* รูปโปรไฟล์ */
+        .profile-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเบาๆ สำหรับรูปภาพ */
+        }
+
+        /* ข้อมูลโปรไฟล์ */
+        .profile-info {
+            margin-top: 30px;
+            border-top: 2px solid #eee;
+            padding-top: 20px;
+        }
+
+        .profile-info p {
+            margin-bottom: 15px;
+        }
+
+        /* การศึกษา */
+        .education-section {
+            margin-top: 40px;
+        }
+
+        .education-section .education-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center; /* จัดให้องค์ประกอบอยู่กลางแนวแกน Y */
+        }
+
+        .education-section .logo {
+            margin-right: 20px; /* ระยะห่างระหว่างโลโก้และข้อความ */
+            flex-shrink: 0; /* ป้องกันไม่ให้โลโก้ย่อขนาด */
+        }
+
+        .education-section .logo img {
+            max-width: 100px; /* กำหนดขนาดโลโก้ */
+            height: auto;
+        }
+
+        .education-section p {
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+            color: #555;
+            margin: 0;
+        }
+
+        /* เพิ่มกรอบสำหรับแผนที่ */
+        iframe {
+            border-radius: 8px; /* ทำให้แผนที่มีมุมโค้ง */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้แผนที่ */
+        }
+
+        /* เพิ่มช่องทางติดต่อ */
+        .contact-section {
+            margin-top: 40px;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            color: #003366;
+            font-weight: bold;
+        }
+        .education-item .logo img {
+    display: block;
+    margin: 0 auto; /* จัดโลโก้ให้อยู่กึ่งกลาง */
+    max-width: 150px; /* กำหนดขนาดโลโก้ */
+    height: auto;
+}
+
+    </style>
 </head>
 <body>
-    <h1># vanvisa.github.io</h1>
+    <!-- โปรไฟล์ส่วนหลัก -->
+    <div class="container">
+        <!-- รูปโปรไฟล์ -->
+        <div class="profile-image">
+            <img src="img/pf.jpg" alt="Vanvisa Boonkawe">
+        </div>
+        
+        <!-- หัวข้อ Profile -->
+        <h1>Profile</h1>
+        
+        <div class="profile-info">
+            <h2>นางสาว วรรณวิสา บุญแก้ว</h2>
+            <h3>10 กุมภาพันธ์ 2548</h3>
+            <p>รหัสนักศึกษา 66309010031</p>
+            <p>สาขา นักพัฒนาซอฟแวร์คอมพิวเตอร์</p>
+            <p>ห้อง IT.5101</p>
+        </div>
+    </div>
 
-    <h2># Vanvisa Boonkawe</h2>
-    <h2># Fern</h2>
-    <h2># number 19.</h2>
-    <h2># IT.5101</h2>
-    <h2># ID Students 66309010031</h2>
+    <!-- ที่อยู่ -->
+    <div class="container">
+        <h2>ที่อยู่อาศัย</h2>
+        <p>บ้านเลขที่ 107/15 หมู่ 3 ต.แม่เหียะ อ.เมืองเชียงใหม่ จ.เชียงใหม่ 50100</p>
+        <div class="map-container">
+            <!-- แผนที่ -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1888.9449809830166!2d98.90965853878869!3d18.758451535334526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDQ1JzMwLjQiTiA5OMKwNTQnMzkuNCJF!5e0!3m2!1sth!2sth!4v1734496265193!5m2!1sth!2sth" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- ประวัติการศึกษา -->
+    <div class="container education-section">
+        <h2>ประวัติการศึกษา</h2>
+        <div class="education-item">
+            <div class="logo"><img src="img/logo1.jpg" alt="Primary School Logo"></div>
+            <div>
+                <h3>ประถมศึกษา</h3>
+                <p>โรงเรียนบ้านตองกาย</p>
+                <p>ที่อยู่ : หมู่ที่ 12 ถนน - ตำบล/แขวง หนองควาย อำเภอ/เขต หางดง จังหวัด เชียงใหม่ รหัสไปรษณีย์ 50230</p>
+            </div>
+        </div>
+        <div class="education-item">
+            <div class="logo"><img src="img/logo2.jpg" alt="Junior High School Logo"></div>
+            <div>
+                <h3>มัธยมศึกษาตอนต้น</h3>
+                <p>โรงเรียนบ้านสันป่าสัก</p>
+                <p>ที่อยู่ : 136 หมู่ที่ 11 ถนน เชียงใหม่ - ฮอด ตำบล หนองควาย อำเภอ หางดง จังหวัด เชียงใหม่ รหัสไปรษณีย์ 50230</p>
+            </div>
+        </div>
+        <div class="education-item">
+            <div class="logo"><img src="img/logo3.png" alt="Vocational Certificate Logo"></div>
+            <div>
+                <h3>ประกาศนียบัตรวิชาชีพ</h3>
+                <p>วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</p>
+                <p>ที่อยู่ : 2 ถนน สุขเกษม ตำบลช้างเผือก เมือง เชียงใหม่ 50300</p>
+            </div>
+        </div>
+        <div class="education-item">
+            <div class="logo"><img src="img/logo3.png" alt="Vocational Diploma Logo"></div>
+            <div>
+                <h3>ประกาศนียบัตรวิชาชีพชั้นสูง</h3>
+                <p>วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</p>
+                <p>ที่อยู่ : 2 ถนน สุขเกษม ตำบลช้างเผือก เมือง เชียงใหม่ 50300</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container education-section">
+        <h2>ประวัติการฝึกงาน</h2>
+        <div class="education-item">
+            <div class="logo">
+                <img src="img/logo5.jpg" alt="Internship Logo">
+            </div>
+            <div>
+                <h3>เทศบาลเมืองแม่เหียะ เชียงใหม่</h3>
+                <p>ที่อยู่: 194 ถ. สมโภชเชียงใหม่ 700 ปี ตำบล แม่เหียะ อำเภอเมืองเชียงใหม่ เชียงใหม่ 50100</p>
+                <p>โทรศัพท์: 053 276 491</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.2285613111844!2d98.96404919999999!3d18.743325100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da30f9418f4c3f%3A0x29193c17a0298c94!2z4Liq4Liz4LiZ4Lix4LiB4LiH4Liy4LiZ4LmA4LiX4Lio4Lia4Liy4Lil4LmA4Lih4Li34Lit4LiH4LmB4Lih4LmI4LmA4Lir4Li14Lii4Liw!5e0!3m2!1sth!2sth!4v1734504592920!5m2!1sth!2sth" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="education-item">
+            <div class="logo">
+                <img src="img/logo4.jpg" alt="Internship Logo">
+            </div>
+            <div>
+                <h3>ศูนย์อนามัยที่ 1 เชียงใหม่</h3>
+                <p>ที่อยู่: 51 ซอย ถนนประชาสัมพันธ์ ตำบลช้างคลาน อำเภอเมืองเชียงใหม่ เชียงใหม่ 50100</p>
+                <p>โทรศัพท์: 053 276 491</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.5627296564376!2d98.9948517!3d18.773059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da300c41901dab%3A0x83d43c75e752bd3!2z4Lio4Li54LiZ4Lii4LmM4Lit4LiZ4Liy4Lih4Lix4Lii4LiX4Li14LmIIDEg4LmA4LiK4Li14Lii4LiH4LmD4Lir4Lih4LmIIOC4geC4o-C4oeC4reC4meC4suC4oeC4seC4og!5e0!3m2!1sth!2sth!4v1734506855419!5m2!1sth!2sth" width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div></center>
+
+    <!-- ช่องทางติดต่อ -->
+    <div class="container contact-section">
+        <h2>ช่องทางติดต่อ</h2>
+        <p>Email: vanvisaboonkawe@gmail.com</p>
+        <p>Phone: 098-7655471</p>
+    </div>
 </body>
 </html>
